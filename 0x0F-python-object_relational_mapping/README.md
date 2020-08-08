@@ -21,6 +21,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 
 Without ORM:
 </p>
+
 ```python
 conn = MySQLdb.connect(host="localhost", port=3306, user="root", passwd="root", db="my_db", charset="utf8")
 cur = conn.cursor()
