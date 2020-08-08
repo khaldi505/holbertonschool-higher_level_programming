@@ -1,0 +1,80 @@
+-------------
+0-add_integer
+-------------
+
+"""
+---------------
+simple addition
+---------------
+
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> a = add_integer(69,1)
+>>> print(a)
+70
+
+-----------
+float test
+-----------
+
+>>> a = add_integer(1.5,3)
+>>> print(a)
+4
+
+---------------
+Float overflow
+---------------
+>>> b = 1.8 * 10 ** 308
+>>> a = add_integer(b,5)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+
+
+-----------
+ float NaN
+-----------
+>>> a = float('nan')
+>>> b = add_integer(a, 5)
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+
+
+
+
+---------------
+negative number
+---------------
+
+>>> a = add_integer(10,-5)
+>>> print(a)
+5
+
+>>> a = add_integer(-5,10)
+>>> print(a)
+5
+
+------
+string 
+------
+
+>>> add_integer("School", 1)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+--------------------
+missing one argument
+--------------------
+>>> a = add_integer(1,)
+>>> print(a)
+99
+
+--------------------
+missing two argument
+--------------------
+>>> a = add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+"""

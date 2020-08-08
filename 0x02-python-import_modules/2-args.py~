@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+import sys
+noa = len(sys.argv)
+for i in range(1, noa):
+    if i == 0:
+        print("{} arguments.".format(i))
+    elif i >= 1:
+        print("{:d}: {}".format(i, noa[i]))

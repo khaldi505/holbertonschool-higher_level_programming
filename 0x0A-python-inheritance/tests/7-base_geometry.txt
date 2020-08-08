@@ -1,0 +1,11 @@
+-------------
+base_geometry
+-------------
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> test = BaseGeometry()
+>>> test.integer_validator("my_int", 79)
+>>> test.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
