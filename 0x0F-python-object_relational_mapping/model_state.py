@@ -1,4 +1,3 @@
-BBBB
 #!/usr/bin/python3
 """the class definition of a State"""
 
