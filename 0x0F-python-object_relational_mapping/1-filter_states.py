@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import sys
 import MySQLdb
-
+""" lists all states with a name starting with n"""
 db = MySQLdb.connect(host="localhost", user=sys.argv[
                      1], passwd=sys.argv[2], db=sys.argv[3], port=3306)
 cur = db.cursor()
