@@ -1,9 +1,20 @@
+BBBB
 #!/usr/bin/python3
-''' i'll update this late '''
-import sys
-from model_state import Base, state
-import sqlalchemy
-if __name__ == "__main__":
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
-        "root", "root", "my_db"), pool_pre_ping=True)
-    Base.metadata.create_all(engine)
+"""the class definition of a State"""
+
+
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
+
+
+class state(Base):
+
+    """ the state class """
+
+    __tablename__ = 'state'
+    id = Column(Integer, autoincrement=True,
+                primary_key=True, nullable=False, unique=True)
+    name = Column(String(128),
+                  nullable=False)
