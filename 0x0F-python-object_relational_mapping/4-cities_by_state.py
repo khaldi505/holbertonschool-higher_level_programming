@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-# script that lists all states from the database
+''' script that lists all states from the database '''
+
 if __name__ == "__main__":
 
     import MySQLdb
