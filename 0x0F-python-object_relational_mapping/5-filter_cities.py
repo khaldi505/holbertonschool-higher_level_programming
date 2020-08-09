@@ -22,7 +22,8 @@ if __name__ == "__main__":
             if (state[0] == state[3]):
                 if not (state[4] in cities):
                     cities.append(state[4])
-
+    if (len(cities) == 0):
+        print("")
     for city in range(len(cities)):
         if (city == len(cities) - 1):
             print("{}".format(cities[city]))
