@@ -18,6 +18,6 @@ if __name__ == "__main__":
         if (argv[4] == state.name):
             print("{}".format(state.id))
             a = True
-    if (a == False):
+    if not (a):
         print("Not found")
     session.close()
