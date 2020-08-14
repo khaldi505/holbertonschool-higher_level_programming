@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module that prints all states "
+""" Module that prints all states """
 
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey
