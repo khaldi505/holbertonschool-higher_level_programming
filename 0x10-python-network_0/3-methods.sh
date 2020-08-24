@@ -1,3 +1,3 @@
 #!/bin/bash
-# URL and D.
-curl -sLI 0.0.0.0:5000/route_4 -i | grep "Allow:"|cut -d ' ' -f2-
+# Bash script that takes in a URL and displays all HTTP methods the server will accept.
+curl -sLi "$1" | curl "Allow" | awk "{print $2}"
