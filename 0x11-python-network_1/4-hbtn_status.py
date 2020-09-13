@@ -10,8 +10,8 @@ def go_go_power_rangers():
     import requests
     req = requests.get("https://intranet.hbtn.io/status")
     print("Body response:")
-    print("    - type:  {}".format(type(req.text)))
-    print("    - content: {}".format(req.text))
+    print("\t- type:  {}".format(type(req.text)))
+    print("\t- content: {}".format(req.text))
 
 
 if __name__ == "__main__":
