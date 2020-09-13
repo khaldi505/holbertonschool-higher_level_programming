@@ -12,6 +12,8 @@ def go_go_power_rangers():
     req = requests.get(argv[1])
     if req.headers["X-Request-Id"]:
         print(req.headers["X-Request-Id"])
+    else:
+    	print()
 
 
 if __name__ == "__main__":
