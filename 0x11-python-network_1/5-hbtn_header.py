@@ -10,7 +10,7 @@ def go_go_power_rangers():
     import requests
     from sys import argv
     req = requests.get(argv[1])
-    print(r.headers["X-Request-Id"])
+    print(req.headers["X-Request-Id"])
 
 
 if __name__ == "__main__":
