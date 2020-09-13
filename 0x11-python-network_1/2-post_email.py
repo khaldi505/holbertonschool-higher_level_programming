@@ -8,6 +8,6 @@ def go_go_power_rangers():
 	url = argv[1]
 	with request.urlopen(url, email) as rep:
 	    info = rep.read()
-	print(info)
+	print(info.decode("UTF-8"))
 if __name__ == "__main__":
     go_go_power_rangers()
